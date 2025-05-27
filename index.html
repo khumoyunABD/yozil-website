@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yozil.uz - Your Beauty Journey Starts Here</title>
+    <title data-i18n="page_title">
+      Yozil.uz - Ваше путешествие красоты начинается здесь
+    </title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,12 +14,39 @@
       <div class="nav-container">
         <div class="logo">Yozil.uz</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" data-i18n="nav_home">Главная</a></li>
+          <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
+          <li>
+            <a href="#how-it-works" data-i18n="nav_how_it_works"
+              >Как это работает</a
+            >
+          </li>
+          <li><a href="#about" data-i18n="nav_about">О нас</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Контакты</a></li>
         </ul>
+
+        <!-- Language Dropdown -->
+        <div class="language-selector">
+          <button class="language-btn" id="languageBtn">
+            <span class="flag-icon">🇷🇺</span>
+            <span data-i18n="lang_russian">Русский</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <div class="language-dropdown" id="languageDropdown">
+            <div class="language-option" data-lang="ru">
+              <span class="flag-icon">🇷🇺</span>
+              <span>Русский</span>
+            </div>
+            <div class="language-option" data-lang="uz">
+              <span class="flag-icon">🇺🇿</span>
+              <span>O'zbek</span>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span class="flag-icon">🇺🇸</span>
+              <span>English</span>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -30,14 +59,21 @@
       </div>
       <div class="container">
         <div class="hero-content">
-          <h1>Your Beauty Journey Starts Here</h1>
-          <p>
-            Discover and book the best health & beauty services in Uzbekistan.
-            From salons to spas, find your perfect appointment in seconds.
+          <h1 data-i18n="hero_title">
+            Ваше путешествие красоты начинается здесь
+          </h1>
+          <p data-i18n="hero_description">
+            Откройте для себя и забронируйте лучшие услуги здоровья и красоты в
+            Узбекистане. От салонов до спа-центров, найдите идеальную запись за
+            секунды.
           </p>
           <div class="cta-buttons">
-            <a href="#" class="btn btn-primary">Book Now</a>
-            <a href="#" class="btn btn-secondary">Join as Provider</a>
+            <a href="#" class="btn btn-primary" data-i18n="hero_book_now"
+              >Забронировать сейчас</a
+            >
+            <a href="#" class="btn btn-secondary" data-i18n="hero_join_provider"
+              >Присоединиться как поставщик</a
+            >
           </div>
         </div>
       </div>
@@ -46,54 +82,57 @@
     <!-- Features Section -->
     <section class="features" id="services">
       <div class="container">
-        <h2>Why Choose Yozil.uz?</h2>
+        <h2 data-i18n="features_title">Почему выбирают Yozil.uz?</h2>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">✨</div>
-            <h3>Premium Salons</h3>
-            <p>
-              Access to the finest health and beauty establishments across
-              Uzbekistan, all verified and rated by real customers.
+            <h3 data-i18n="feature_premium_title">Премиум салоны</h3>
+            <p data-i18n="feature_premium_desc">
+              Доступ к лучшим заведениям здоровья и красоты по всему
+              Узбекистану, все проверены и оценены реальными клиентами.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
-            <h3>Easy Booking</h3>
-            <p>
-              Book your appointments 24/7 with our simple and intuitive
-              platform. No more waiting on hold or busy signals.
+            <h3 data-i18n="feature_booking_title">Легкое бронирование</h3>
+            <p data-i18n="feature_booking_desc">
+              Бронируйте встречи 24/7 с помощью нашей простой и интуитивной
+              платформы. Больше никого ожидания на линии или занятых сигналов.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⭐</div>
-            <h3>Verified Reviews</h3>
-            <p>
-              Make informed decisions with authentic reviews and ratings from
-              verified customers who've experienced the services.
+            <h3 data-i18n="feature_reviews_title">Проверенные отзывы</h3>
+            <p data-i18n="feature_reviews_desc">
+              Принимайте обоснованные решения с помощью подлинных отзывов и
+              оценок от проверенных клиентов, испытавших услуги.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">💰</div>
-            <h3>Best Prices</h3>
-            <p>
-              Compare prices across different providers and enjoy exclusive
-              deals and discounts available only on our platform.
+            <h3 data-i18n="feature_prices_title">Лучшие цены</h3>
+            <p data-i18n="feature_prices_desc">
+              Сравнивайте цены различных поставщиков и наслаждайтесь
+              эксклюзивными предложениями и скидками, доступными только на нашей
+              платформе.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔔</div>
-            <h3>Smart Reminders</h3>
-            <p>
-              Never miss an appointment with our intelligent reminder system
-              that keeps you informed via SMS and email.
+            <h3 data-i18n="feature_reminders_title">Умные напоминания</h3>
+            <p data-i18n="feature_reminders_desc">
+              Никогда не пропустите встречу с нашей интеллектуальной системой
+              напоминаний, которая информирует вас через SMS и электронную
+              почту.
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🏆</div>
-            <h3>Quality Guarantee</h3>
-            <p>
-              We partner only with licensed professionals and establishments
-              that meet our strict quality standards.
+            <h3 data-i18n="feature_quality_title">Гарантия качества</h3>
+            <p data-i18n="feature_quality_desc">
+              Мы сотрудничаем только с лицензированными профессионалами и
+              заведениями, которые соответствуют нашим строгим стандартам
+              качества.
             </p>
           </div>
         </div>
@@ -103,40 +142,42 @@
     <!-- How It Works -->
     <section class="how-it-works" id="how-it-works">
       <div class="container">
-        <h2>How It Works</h2>
+        <h2 data-i18n="how_it_works_title">Как это работает</h2>
         <div class="steps">
           <div class="step">
             <div class="step-number">1</div>
-            <h3>Browse & Search</h3>
-            <p>
-              Explore our extensive directory of health and beauty services.
-              Filter by location, service type, price, and ratings to find
-              exactly what you need.
+            <h3 data-i18n="step1_title">Просматривайте и ищите</h3>
+            <p data-i18n="step1_desc">
+              Изучите наш обширный каталог услуг здоровья и красоты. Фильтруйте
+              по местоположению, типу услуги, цене и рейтингам, чтобы найти
+              именно то, что вам нужно.
             </p>
           </div>
           <div class="step">
             <div class="step-number">2</div>
-            <h3>Choose & Compare</h3>
-            <p>
-              Compare different providers, read reviews, check availability, and
-              select the perfect time slot that fits your schedule.
+            <h3 data-i18n="step2_title">Выбирайте и сравнивайте</h3>
+            <p data-i18n="step2_desc">
+              Сравнивайте различных поставщиков, читайте отзывы, проверяйте
+              доступность и выберите идеальное время, которое подходит вашему
+              расписанию.
             </p>
           </div>
           <div class="step">
             <div class="step-number">3</div>
-            <h3>Book Instantly</h3>
-            <p>
-              Secure your appointment with instant confirmation. Receive booking
-              details and reminders to ensure you never miss your beauty
-              session.
+            <h3 data-i18n="step3_title">Бронируйте мгновенно</h3>
+            <p data-i18n="step3_desc">
+              Обеспечьте свою встречу с мгновенным подтверждением. Получите
+              детали бронирования и напоминания, чтобы никогда не пропустить
+              сеанс красоты.
             </p>
           </div>
           <div class="step">
             <div class="step-number">4</div>
-            <h3>Enjoy & Review</h3>
-            <p>
-              Experience premium service and share your feedback to help others
-              discover amazing beauty professionals in their area.
+            <h3 data-i18n="step4_title">Наслаждайтесь и оценивайте</h3>
+            <p data-i18n="step4_desc">
+              Испытайте премиальный сервис и поделитесь своими отзывами, чтобы
+              помочь другим открыть удивительных профессионалов красоты в их
+              районе.
             </p>
           </div>
         </div>
@@ -149,19 +190,27 @@
         <div class="stats-grid">
           <div class="stat">
             <div class="stat-number">10,000</div>
-            <div class="stat-label">Happy Customers</div>
+            <div class="stat-label" data-i18n="stat_customers">
+              Довольных клиентов
+            </div>
           </div>
           <div class="stat">
             <div class="stat-number">500</div>
-            <div class="stat-label">Partner Salons</div>
+            <div class="stat-label" data-i18n="stat_salons">
+              Партнерских салонов
+            </div>
           </div>
           <div class="stat">
             <div class="stat-number">50,000</div>
-            <div class="stat-label">Bookings Made</div>
+            <div class="stat-label" data-i18n="stat_bookings">
+              Сделанных бронирований
+            </div>
           </div>
           <div class="stat">
             <div class="stat-number">4.9</div>
-            <div class="stat-label">Average Rating</div>
+            <div class="stat-label" data-i18n="stat_rating">
+              Средний рейтинг
+            </div>
           </div>
         </div>
       </div>
@@ -170,14 +219,18 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
-        <h2>Ready to Transform Your Beauty Routine?</h2>
-        <p>
-          Join thousands of satisfied customers who trust Yozil.uz for their
-          health and beauty needs.
+        <h2 data-i18n="cta_title">Готовы изменить свою рутину красоты?</h2>
+        <p data-i18n="cta_description">
+          Присоединитесь к тысячам довольных клиентов, которые доверяют Yozil.uz
+          для своих потребностей в здоровье и красоте.
         </p>
         <div class="cta-buttons">
-          <a href="#" class="btn btn-primary">Start Booking Today</a>
-          <a href="#" class="btn btn-secondary">Download App</a>
+          <a href="#" class="btn btn-primary" data-i18n="cta_start_booking"
+            >Начните бронирование сегодня</a
+          >
+          <a href="#" class="btn btn-secondary" data-i18n="cta_download_app"
+            >Скачать приложение</a
+          >
         </div>
       </div>
     </section>
@@ -188,51 +241,76 @@
         <div class="footer-content">
           <div class="footer-section">
             <h4>Yozil.uz</h4>
-            <p>
-              Your trusted partner for health and beauty services in Uzbekistan.
-              Connecting you with the best professionals in the industry.
+            <p data-i18n="footer_description">
+              Ваш надежный партнер для услуг здоровья и красоты в Узбекистане.
+              Соединяем вас с лучшими профессионалами в отрасли.
             </p>
           </div>
           <div class="footer-section">
-            <h4>Services</h4>
+            <h4 data-i18n="footer_services">Услуги</h4>
             <ul>
-              <li><a href="#">Hair Salons</a></li>
-              <li><a href="#">Nail Studios</a></li>
-              <li><a href="#">Spa & Wellness</a></li>
-              <li><a href="#">Beauty Clinics</a></li>
-              <li><a href="#">Massage Therapy</a></li>
+              <li>
+                <a href="#" data-i18n="footer_hair_salons">Парикмахерские</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_nail_studios">Студии маникюра</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_spa_wellness">Спа и велнес</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_beauty_clinics"
+                  >Клиники красоты</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_massage">Массажная терапия</a>
+              </li>
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Company</h4>
+            <h4 data-i18n="footer_company">Компания</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Partner with Us</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#" data-i18n="footer_about">О нас</a></li>
+              <li><a href="#" data-i18n="footer_careers">Карьера</a></li>
+              <li><a href="#" data-i18n="footer_partner">Партнерство</a></li>
+              <li><a href="#" data-i18n="footer_press">Пресса</a></li>
+              <li><a href="#" data-i18n="footer_blog">Блог</a></li>
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Support</h4>
+            <h4 data-i18n="footer_support">Поддержка</h4>
             <ul>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Cancellation Policy</a></li>
+              <li>
+                <a href="#" data-i18n="footer_help_center">Центр помощи</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_contact">Связаться с нами</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_privacy"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_terms">Условия обслуживания</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="footer_cancellation">Политика отмены</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>
-            &copy; 2025 Yozil.uz. All rights reserved. Transforming beauty
-            experiences across Uzbekistan.
+          <p data-i18n="footer_copyright">
+            &copy; 2025 Yozil.uz. Все права защищены. Преобразуем опыт красоты
+            по всему Узбекистану.
           </p>
         </div>
       </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
