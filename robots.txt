@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://yozil.uz/sitemap.xml
+
+# Optional: Block unnecessary files
+Disallow: /styles.css
+Disallow: /script.js
+Disallow: /translations.js
